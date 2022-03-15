@@ -3,4 +3,4 @@ export interface ICategory{
     Name:string
 }
 
-export enum DiscountOffers{"No Discount", "10%","15%"}
+export enum DiscountOffers{no="No Discount",A10= "10%",A15="15%"}

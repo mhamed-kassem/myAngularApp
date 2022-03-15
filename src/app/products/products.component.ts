@@ -18,9 +18,9 @@ export class ProductsComponent implements OnInit {
   IsPurshased:boolean;
 
   constructor() { 
-    this.Discount=DiscountOffers['10%'];
+    this.Discount=DiscountOffers.A15;
     this.StoreName="Jumia";
-    this.StoreLogo="/src/assets/image.png";
+    this.StoreLogo="../../assets/logo.png";
     this.ProductList=[];
     this.ProductList.push({ID:1,Name:"Product1",Price:300,Quantity:5,Img:"/src/assets/image.png"});
     this.ProductList.push({ID:2,Name:"Product2",Price:690,Quantity:18,Img:"/src/assets/image.png"});
