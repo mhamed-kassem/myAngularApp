@@ -1,0 +1,17 @@
+<p>employee-component works!</p>
+<table class="table" >
+    <thead>
+        <tr >
+            <td>#ID</td>
+            <td>Name</td>
+            <td>Age</td>
+        </tr>
+    </thead>
+    <tbody *ngFor="let employee of EmployeeList">
+        <tr >
+            <td>{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.age}}</td>
+        </tr>
+    </tbody>
+</table>

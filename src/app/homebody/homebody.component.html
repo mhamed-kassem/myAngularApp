@@ -1,2 +1,38 @@
 <p>homebody works!</p>
 <app-products></app-products>
+
+<br>
+<hr><br>
+
+<app-user></app-user>
+
+<br>
+<hr><br>
+
+<app-post></app-post>
+
+<br>
+<hr><br>
+
+<app-comment></app-comment>
+
+<br>
+<hr><br>
+<!--view Child -->
+<!--Access Child Properties and methods-->
+<button (click)="callChildRenderValuesMethod()"> Show </button>
+
+<h2>Products From Child </h2>
+{{ProductChildList.length}}
+<!--View-Child-->
+<div class="card rounded m-2" *ngFor="let item of ProductChildList" style="width: 18rem;display:inline-block">
+    <img class="card-img-top" [src]="item.Img" width="100px" height="150px" alt="Card image cap">
+    <div class="card-body">
+        <h3 class="card-title">{{item.Name}}</h3>
+        <h5 class="card-text">Price: {{item.Price}}</h5>
+        <h5 class="card-text">Quantity: {{item.Quantity}}</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        <a href="#" class="btn btn-primary">Buy</a>
+    </div>
+</div>

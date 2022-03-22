@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ProductsComponent } from '../products/products.component';
 
 @Component({
   selector: 'app-homebody',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomebodyComponent implements OnInit {
 
+  title = 'Home';
+
+  ProductChildList:any=[];
+  @ViewChild(ProductsComponent)product!:ProductsComponent;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  ngAfterViewInit(): void {
+  }
+
+  callChildRenderValuesMethod():void{
+    this.product.RenderValues();
+    this.ProductChildList= this.product.ProductServicList;
+
+  }
 }

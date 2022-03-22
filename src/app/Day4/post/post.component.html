@@ -1,0 +1,10 @@
+<p class="text-center">post works!</p>
+
+    <div class="card rounded m-1" *ngFor="let post of PostsList" style="width: 18rem;display:inline-block">
+      <div class="card-body">
+        <h3 class="card-title">{{post.title}}</h3>
+        <p class="card-text">{{post.body}}</p>
+        <button class="btn btn-primary" (click)="goToCommentPage(post.id)">Show Comments</button>
+      </div>
+    </div>
+  
