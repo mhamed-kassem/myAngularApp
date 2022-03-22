@@ -1,7 +1,7 @@
 <h1 class="text-center">Users</h1>
 
-<div class="card  card-group">
-    <div class="card-body" *ngFor="let user of UsersList">
+<div class="card m-2 card-group rounded" *ngFor="let user of UsersList" style="width: 18rem;display:inline-block">
+    <div class="card-body">
         <h5 class="card-title">{{user.name}}</h5>
         <p class="card-text">{{user.email}}</p>
         <a href="#" class="btn btn-primary">Button</a>

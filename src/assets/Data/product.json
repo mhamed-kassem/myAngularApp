@@ -1,0 +1,5 @@
+[
+    {"ID":1,"Name":"Dell","Price":1000,"Image":"../../assets/images/p11.jfif","Quantity":4,"Description":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"},
+    {"ID":2,"Name":"HP","Price":2000,"Image":"../../assets/images/p12.jfif","Quantity":5,"Description":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"},
+    {"ID":3,"Name":"Android","Price":30000,"Image":"../../assets/images/p13.jfif","Quantity":6,"Description":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"}
+]

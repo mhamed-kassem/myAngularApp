@@ -10,6 +10,8 @@ import { EmployeeComponentComponent } from './employee-component/employee-compon
 import { PostComponent } from './Day4/post/post.component';
 import { CommentComponent } from './Day4/comment/comment.component';
 import { UserComponent } from './Day4/user/user.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { UserComponent } from './Day4/user/user.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    RouterModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent]
